@@ -14,9 +14,9 @@ const Index = () => {
     <div className="min-h-screen bg-background flex flex-col items-center justify-center p-4 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute inset-0 opacity-5 pointer-events-none">
-        <div className="absolute top-20 left-10 w-40 h-40 bg-magenta rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-20 w-48 h-48 bg-cobalt rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-blush rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-20 left-10 w-40 h-40 bg-[hsl(var(--punk-coral))] rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-20 w-48 h-48 bg-[hsl(var(--riot-pink))] rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-[hsl(var(--lilac-grit))] rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }} />
       </div>
 
       <div className="w-full max-w-4xl relative z-10 text-center animate-fade-in">
@@ -31,10 +31,10 @@ const Index = () => {
         <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-typewriter text-foreground mb-6 leading-tight">
           What's Your{" "}
           <span className="relative inline-block">
-            <span className="bg-gradient-to-r from-magenta to-cobalt bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[hsl(var(--punk-coral))] to-[hsl(var(--riot-pink))] bg-clip-text text-transparent">
               Launch Era
             </span>
-            <Sparkles className="absolute -top-4 -right-8 w-6 h-6 text-magenta animate-flicker hidden md:block" />
+            <Sparkles className="absolute -top-4 -right-8 w-6 h-6 text-[hsl(var(--riot-pink))] animate-flicker hidden md:block" />
           </span>
           ?
         </h1>
@@ -52,7 +52,7 @@ const Index = () => {
         <Button
           onClick={() => setStarted(true)}
           size="lg"
-          className="bg-gradient-to-r from-magenta to-cobalt text-white hover:opacity-90 transition-all shadow-xl hover:shadow-2xl text-lg px-10 py-7 group hover:scale-105"
+          className="bg-[hsl(var(--punk-coral))] text-white hover:bg-[hsl(var(--riot-pink))] transition-all shadow-xl hover:shadow-2xl text-lg px-10 py-7 group hover:scale-105"
         >
           <Zap className="mr-2 w-5 h-5 group-hover:animate-glitch" />
           Discover Your Era
@@ -61,9 +61,9 @@ const Index = () => {
 
         {/* Visual decorative elements */}
         <div className="mt-16 flex items-center justify-center gap-3 opacity-50">
-          <div className="w-2 h-2 rounded-full bg-magenta animate-pulse" />
-          <div className="w-2 h-2 rounded-full bg-cobalt animate-pulse" style={{ animationDelay: '0.3s' }} />
-          <div className="w-2 h-2 rounded-full bg-blush animate-pulse" style={{ animationDelay: '0.6s' }} />
+          <div className="w-2 h-2 rounded-full bg-[hsl(var(--punk-coral))] animate-pulse" />
+          <div className="w-2 h-2 rounded-full bg-[hsl(var(--riot-pink))] animate-pulse" style={{ animationDelay: '0.3s' }} />
+          <div className="w-2 h-2 rounded-full bg-[hsl(var(--lilac-grit))] animate-pulse" style={{ animationDelay: '0.6s' }} />
         </div>
       </div>
 
